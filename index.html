@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- favicon  -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- css  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+  <main>
+    <div class="left-bg"></div>
+    <div class="right-bg"></div>
+    <!-- mobile  -->
+    <div class="mobile">
+      <!-- screen  -->
+      <div class="screen">
+        <!-- notch  -->
+        <div class="notch">
+        </div>
+        <!--  mobile header  -->
+        <div class="contact-name">
+          <i class="fa-solid fa-chevron-left"></i>
+          <img src="images/avatar.jpg" alt="profile img">
+          <div class="name">
+            <h1>Samuel Green</h1>
+            <p>Available to Walk</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <!-- recieved text  -->
+        <div class="chat">
+          <!--recieved msg  -->
+          <div class="msg">
+            <p>That sounds great. I’d be happy with that.</p>
+          </div>
+          <div class="msg">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <!-- sent dog images  -->
+          <div class="sent">
+            <div class="dogs-imgs">
+              <img src="images/dog-image-1.jpg" alt="dog image">
+              <img src="images/dog-image-2.jpg" alt="dog image">
+              <img src="images/dog-image-3.jpg" alt="dog image">
+            </div>
+            <div class="text-msg">
+              <div class="sent-msg">
+                <p>Here are a few pictures. She’s a happy girl!</p>
+              </div>
+              <div class="sent-msg">
+                <p>can you make it?</p>
+              </div>
+            </div>
+          </div>
+          <div class="msg">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I take her out for?
+            </p>
+          </div>
+          <label class="radio">
+            <input type="radio" name="price" class="radio-btn" id="price29">
+            <span class="checkmark"></span>
+            30 minute walk <span class="dollar29">$29</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="price" class="radio-btn" id="price49">
+            <span class="checkmark"></span>
+           1 hour walk<span class="dollar49"> $49</span>
+          </label>
+
+          <div class="text-area">
+            <input class="typing" type="text" name="type-msg" id="type-msg" placeholder="Type a message…">
+            <i class="fa-solid fa-circle-chevron-right fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="booking">
+      <h2>Simple booking</h2>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>

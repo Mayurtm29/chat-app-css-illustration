@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary*/
+
+    --Pale_Violet: hsl(276, 100%, 81%);
+    --Moderate_Violet: hsl(276, 55%, 52%);
+    --Desaturated_Dark_Violet: hsl(271, 15%, 43%);
+    --Grayish_Blue: hsl(206, 6%, 79%);
+    --Very_Dark_Desaturated_Violet: hsl(271, 36%, 24%);
+    --Dar_Grayish_Violet: hsl(270, 7%, 64%);
+
+    /* Secondary */
+
+    --White: hsl(0, 0%, 100%);
+    --Light_Grayish_Violet: hsl(270, 20%, 96%);
+    --Very_Dark_Desaturated_Violet: hsl(271, 36%, 24%);
+    --Very_Light_Magenta: hsl(289, 100%, 72%);
+
+    /* Gradients */
+    --Light_Magenta: hsl(293, 100%, 63%);
+    --Light_Violet: hsl(264, 100%, 61%);
+}
+
+body {
+    background-image: url("images/");
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.left-bg {
+    background-image: linear-gradient(to top right, var(--Light_Violet), var(--Light_Magenta));
+    width: 40rem;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -13rem;
+    border-radius: 0 0 20rem 20rem;
+}
+
+.right-bg {
+    background-color: var(--Light_Grayish_Violet);
+    width: 25rem;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    border-radius: 25rem 0 0 0;
+}
+
+/* mobile  */
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    width: 18.5rem;
+    height: 38rem;
+    border-radius: 2rem;
+    box-shadow: 10px 20px 40px 2px rgb(0 0 0 / 20%);
+}
+
+.screen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Light_Grayish_Violet);
+    width: 17rem;
+    height: 36.5rem;
+    border-radius: 1.3rem;
+    position: relative;
+}
+
+.notch {
+    align-self: center;
+    background-color: var(--White);
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0 0 0.8rem 0.8rem;
+    position: absolute;
+    top: -0.3rem;
+    z-index: 1;
+}
+
+.contact-name {
+    background-image: linear-gradient(to right, var(--Light_Violet), var(--Light_Magenta));
+    height: 5rem;
+    width: 100%;
+    align-self: flex-start;
+    border-radius: 1.3rem 1.3rem 0.4rem 0.4rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: var(--White);
+    padding-top: 2rem;
+}
+
+.contact-name>img {
+    width: 15%;
+    border: 2px solid var(--White);
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+.contact-name>.fa-chevron-left {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.name>h1 {
+    color: var(--White);
+    font-size: 0.8rem;
+}
+
+.name>p {
+    color: var(--Pale_Violet);
+    font-size: 0.6rem;
+}
+
+.contact-name>.fa-ellipsis-vertical {
+    font-size: 0.8rem;
+    margin-left: 5.5rem;
+}
+
+/* chat  */
+.chat {
+    padding: 0.8rem 0.6rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chat>.msg {
+    align-self: flex-start;
+    background-color: hsl(276deg 100% 81% / 20%);
+    color: var(--Moderate_Violet);
+    width: 65%;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.2rem;
+}
+
+.chat>.msg:nth-child(2) {
+    margin-bottom: 0.8rem;
+}
+
+.sent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dogs-imgs {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.dogs-imgs>img {
+    width: 20%;
+    border-radius: 0.5rem;
+}
+
+.text-msg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.sent-msg {
+    border-radius: 0.7rem 0.7rem 0.2rem 0.7rem;
+    background-color: var(--White);
+    color: var(--Desaturated_Dark_Violet);
+    width: 75%;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 3px 5px 17px -8px rgb(0 0 0 / 20%);
+}
+
+.text-msg>.sent-msg:nth-child(2) {
+    width: 45%;
+    margin-bottom: 1rem;
+}
+
+/* radio  */
+.radio {
+    background-image: linear-gradient(to right, var(--Light_Magenta), var(--Light_Violet));
+    border-radius: 0.7rem;
+    color: var(--Light_Grayish_Violet);
+    width: 75%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.6rem;
+    padding: 0.4rem;
+    border-radius: 0.7rem 0.7rem 0.7rem 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.radio-btn {
+    display: none;
+}
+
+.checkmark {
+    display: inline-block;
+    border: 3px solid var(--Very_Light_Magenta);
+    width: 17px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
+.radio-btn:checked+.checkmark {
+    background-color: var(--White);
+}
+
+
+.radio>span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.dollar29 {
+    margin-left: 2rem;
+}
+
+.dollar49 {
+    margin-left: 3rem;
+}
+
+.text-area {
+    background-color: var(--White);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 3px 5px 17px -8px rgb(0 0 0 / 20%);
+}
+
+.typing {
+    width: 85%;
+    height: 2.5rem;
+    border-radius: 3rem;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    background-color: transparent;
+    color: var(--Grayish_Blue);
+}
+
+.fa-circle-chevron-right {
+    color: var(--Very_Dark_Desaturated_Violet);
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.booking>h2 {
+    font-size: 2rem;
+    color: var(--Very_Dark_Desaturated_Violet);
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.booking>p {
+    color: var(--Dar_Grayish_Violet);
+    inline-size: 450px;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width:600px) {
+    main {
+        height: auto;
+        gap: 3rem;
+        margin: 3rem 0;
+    }
+
+    .left-bg {
+        width: 15rem;
+        left: -5rem;
+    }
+
+    .right-bg {
+        width: 15rem;
+        height: 50vh;
+        right: 0;
+        bottom: -20rem;
+    }
+
+    .booking>p {
+        inline-size: 300px;
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+    .booking>h2 {
+        align-self: center;
+    }
+}
